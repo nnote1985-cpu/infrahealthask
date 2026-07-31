@@ -1,5 +1,5 @@
-import { runHealthCheck } from './healthCheck'
-import type { CheckResult } from './types'
+import { runHealthCheck } from './healthCheck.js'
+import type { CheckResult } from './types.js'
 
 export interface RunTarget {
   id: string

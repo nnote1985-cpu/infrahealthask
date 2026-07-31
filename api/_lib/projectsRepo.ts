@@ -1,6 +1,6 @@
-import { adminDb } from './firebaseAdmin'
-import { deriveFromSupabaseUrl } from '../../shared/derive'
-import type { CheckResult, ProjectDoc, HealthStatus, SetupStatus } from '../../shared/types'
+import { adminDb } from './firebaseAdmin.js'
+import { deriveFromSupabaseUrl } from '../../shared/derive.js'
+import type { CheckResult, ProjectDoc, HealthStatus, SetupStatus } from '../../shared/types.js'
 import { FieldValue } from 'firebase-admin/firestore'
 
 export async function getEnabledProjects(): Promise<ProjectDoc[]> {

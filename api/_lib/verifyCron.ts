@@ -1,6 +1,6 @@
 import type { VercelRequest } from '@vercel/node'
 import { getAuth } from 'firebase-admin/auth'
-import { getAdminApp } from './firebaseAdmin'
+import { getAdminApp } from './firebaseAdmin.js'
 
 export function verifyCronSecret(req: VercelRequest): boolean {
   const secret = req.headers['x-cron-secret']

@@ -1,4 +1,4 @@
-import type { CheckResult, ProjectDoc } from './types'
+import type { CheckResult, ProjectDoc } from './types.js'
 
 function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')

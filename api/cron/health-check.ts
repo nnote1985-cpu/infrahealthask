@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { verifyCronSecret } from '../_lib/verifyCron'
-import { acquireCronLease, getEnabledProjects, saveResults, saveRun } from '../_lib/projectsRepo'
-import { runAllHealthChecks } from '../../shared/runAll'
-import { buildReportText, reportKeyboard, sendTelegramMessage } from '../../shared/telegram'
+import { verifyCronSecret } from '../_lib/verifyCron.js'
+import { acquireCronLease, getEnabledProjects, saveResults, saveRun } from '../_lib/projectsRepo.js'
+import { runAllHealthChecks } from '../../shared/runAll.js'
+import { buildReportText, reportKeyboard, sendTelegramMessage } from '../../shared/telegram.js'
 
 export const config = { maxDuration: 60 }
 

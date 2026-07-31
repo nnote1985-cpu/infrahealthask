@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { verifyOwner } from './_lib/verifyCron'
-import { getAllProjects, getFailingProjects, saveResults, saveRun } from './_lib/projectsRepo'
-import { runAllHealthChecks } from '../shared/runAll'
+import { verifyOwner } from './_lib/verifyCron.js'
+import { getAllProjects, getFailingProjects, saveResults, saveRun } from './_lib/projectsRepo.js'
+import { runAllHealthChecks } from '../shared/runAll.js'
 
 export const config = { maxDuration: 60 }
 

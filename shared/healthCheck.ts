@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import type { CheckResult, HealthStatus, SetupStatus } from './types'
+import type { CheckResult, HealthStatus, SetupStatus } from './types.js'
 
 const DEFAULT_TIMEOUT_MS = 15_000
 const SLOW_THRESHOLD_MS = 3_000

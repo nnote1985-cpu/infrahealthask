@@ -5,9 +5,9 @@ import {
   editTelegramMessage,
   reportKeyboard,
   sendTelegramMessage,
-} from '../../shared/telegram'
-import { getAllProjects, getFailingProjects, saveResults, saveRun } from '../_lib/projectsRepo'
-import { runAllHealthChecks } from '../../shared/runAll'
+} from '../../shared/telegram.js'
+import { getAllProjects, getFailingProjects, saveResults, saveRun } from '../_lib/projectsRepo.js'
+import { runAllHealthChecks } from '../../shared/runAll.js'
 
 const botToken = process.env.TELEGRAM_BOT_TOKEN!
 const chatId = process.env.TELEGRAM_CHAT_ID!
