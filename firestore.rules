@@ -1,0 +1,18 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isOwner() {
+      return request.auth != null
+        && request.auth.token.email in [
+          // 👇 แก้เป็นอีเมลที่อนุญาต เพิ่มได้หลายบรรทัด
+          'nnote1985@gmail.com'
+        ];
+    }
+
+    match /{document=**} {
+      allow read, write: if isOwner();
+    }
+  }
+}
