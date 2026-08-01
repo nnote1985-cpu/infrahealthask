@@ -11,6 +11,8 @@ on:
 jobs:
   ping:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Call health-check endpoint
         run: |
